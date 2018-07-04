@@ -1,5 +1,5 @@
-#ifndef _KOALABOT_H
-#define _KOALABOT_H
+#ifndef _KOALABOT_H_
+#define _KOALABOT_H_
 
 #include <iostream>
 #include <cctype>
