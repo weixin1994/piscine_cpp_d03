@@ -1,4 +1,5 @@
-#include "Skat.hh"
+#include <iostream>
+#include "Skat.h"
 
 Skat::Skat(const std::string &name, int stimPaks)
 {

@@ -1,3 +1,6 @@
+#ifndef _SKAT_H_
+#define _SKAT_H_
+
 #include <string>
 #include <iostream>
 #include <cctype>
@@ -17,3 +20,5 @@ class Skat
 		std::string _name;
 		int _stimPaks;
 };
+
+#endif
