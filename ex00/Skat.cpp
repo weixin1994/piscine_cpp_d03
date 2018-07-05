@@ -40,7 +40,7 @@ void Skat::addStimPaks(unsigned int number)
 {
 	if (number == 0) 
 	{
-		std::cout << "Hey boya, did you forget something?\n";
+		std::cout << "Hey boya, did you forget something ?\n";
 	}
 	this->_stimPaks += number;
 }
