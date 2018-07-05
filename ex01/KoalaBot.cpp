@@ -22,17 +22,26 @@ void KoalaBot::setParts(Head& head)
 
 void KoalaBot::swapParts(Arms& arms) 
 {
-	setParts(arms);
+	Arms temp;
+	temp = this->_arms;
+	this->_arms = arms;
+	arms = temp;
 }
 
 void KoalaBot::swapParts(Legs& legs) 
 {
-	setParts(legs);
+	Legs temp;
+	temp = this->_legs;
+	this->_legs = legs;
+	legs = temp;
 }
 
 void KoalaBot::swapParts(Head& head) 
 {
-	setParts(head);
+	Head temp;
+	temp = this->_head;
+	this->_head = head;
+	head = temp;
 }
 
 void KoalaBot::informations() const
