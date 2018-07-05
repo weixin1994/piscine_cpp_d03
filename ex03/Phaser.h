@@ -1,20 +1,22 @@
 #ifndef _PHASER_H_
 #define _PHASER_H_
 
-#include "Sounds.h"
+#include <string>
+#include <iostream>
+#include <queue>
 
-class Phaser
+class Phaser 
 {
 	public:
-		enum AmmoType
+		enum AmmoType 
 		{
-			REGULAR = 20,
+			REGULAR,
 			PLASMA,
 			ROCKET
 		};
-		Phaser(int maxAmmo, AmmoType type);
-		~Phaser();
 
+		Phaser(int maxAmmo = 20, AmmoType type = REGULAR);
+		~Phaser();
 		void fire();
 		void ejectClip();
 		void changeType(AmmoType newType);
@@ -23,9 +25,9 @@ class Phaser
 		int getCurrentAmmos() const;
 
 	private:
-		static const int Empty = 0;
-		const int _maxAmmo;
-		int _currentAmmo[3];
-		AmmoType _type;
+		int _maxAmmo;
+		AmmoType _defaultType;
+		std::queue<AmmoType> _ammos;
 };
+
 #endif

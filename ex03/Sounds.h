@@ -2,12 +2,14 @@
 #define _SOUNDS_H_
 
 #include <iostream>
+#include <string>
 
-static class Sounds
+class Sounds 
 {
 	public:
-		std::string Regular;
-		std::string Plasma;
-		std::string Rocket;
+		static const std::string Regular;
+		static const std::string Plasma;
+		static const std::string Rocket;
 };
+
 #endif
